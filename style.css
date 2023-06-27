@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", "san-serif";
+}
+
+body{
+    background-color: #14112E;
+}
+
+header{
+    background-image: url("./images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerContainer{
+    width: 70%;
+    height: 80vh;
+    margin: auto;
+}
+
+.btnMobile{
+    display: none;
+}
+
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    padding: 10px 25px;
+}
+
+nav a{
+    color: #fff;
+    margin: 0 20px;
+}
+
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerDescription{
+    padding-top: 90px;
+}
+
+.headerDescription h5{
+    color: #255783;
+    font-size: 17px;
+}
+
+.headerDescription h1{
+    font-size: 58px;
+    color: #fff;
+}
+
+.headerDescription button{
+    background-color: #255783;
+    border: none;
+    padding: 15px 38px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+main{
+    width: 75%;
+    margin: auto;
+}
+
+.products{
+    margin: 50px 0;
+}
+
+.productsTitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    color: #fff;
+}
+
+.productsTitle button{
+    padding: 10px 22px;
+    border-radius: 15px;
+    border: none;
+    background-color: #39556e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.productsGalery{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.productsGalery div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.productsGalery div span{
+    color: #fff;
+    margin: 10px 0;
+}
+
+/***********************************/
+
+.articlesTitle{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    color: #fff;
+}
+
+.articlesTitle button{
+    padding: 10px 22px;
+    border-radius: 15px;
+    border: none;
+    background-color: #39556e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.articlesInfo{
+    display: flex;
+    color: #fff;
+    gap:5px;
+    font-size: 16px;
+}
+
+.articlesInfo img{
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.articles .info1{
+    height: 555px;
+    background-image: url("./images/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.articles .info2{
+    height: 275px;
+    background-image: url("./images/bg-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    
+}
+
+.articles .info3{
+    height: 275px;
+    background-image: url("./images/bg-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+/*************************************************/
+
+.topGames h2{
+    color: #fff;
+    margin: 70px 0;
+}
+
+.games{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.game{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.descriptionGame{
+    margin-left: 12px;
+}
+
+.descriptionGame p{
+    color: #aaa;
+}
+
+.descriptionGame button{
+   padding: 8px 18px;
+    border-radius: 15px;
+    background-color: #39556e;
+    border: none;
+    color: #fff;
+}
+
+/*********************************/
+
+footer{
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    background-color: #222128;
+    margin-top: 50px;
+}
+
+/*********************/
+
+@media(max-width:1480px){
+
+    header{
+        height: 100vh;
+    }
+
+    .headerDescription h1{
+        font-size: 48px;
+    }
+
+    .headerImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerImg img{
+        width: 500px;
+        height: 500px;
+        object-fit: scale-down;
+    }
+
+    .productsGalery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .productsGalery img{
+        object-fit: cover;
+    }
+
+    .info2{
+        display: flex;
+    }
+
+    .info3{
+        display: flex;
+    }
+}
+
+@media (max-width:1080px){
+    .games .game{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width:900px){
+    .navLinks{
+        text-align: center;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #222128;
+        top:0;
+        right: 0;
+        left: 0;
+        margin-top: 60px;
+        display: none;
+        
+    }
+
+    .navLinks li{
+        padding: 16px;
+        width: 100%;
+    }
+
+    .navLinks li a{
+       padding: 12px 16px;
+        width: 100%;
+    }
+
+    .btnMobile{
+        display: block;
+        border-radius: 90%;
+        border: none;
+        font-size: 20px;
+        background: none;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px;
+    }
+}
+
+.show{
+    display: block;
+}
+
+@media (max-width:846px){
+    .headerContent{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       
+    }
+
+    .headerContent img{
+        display: none;
+        
+    }
+}
+
+@media (max-width:540px){
+    .productsGalery{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .articlesInfo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articles .info1{
+        height: 100%;
+    }
+
+    .articles .info2{
+        height: 100%;
+        margin: 10px 0;
+    }
+
+    .articles .info3{
+        height: 100%;
+    }
+
+    .games{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:280px){
+
+    .productsTitle{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articlesTitle{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articles .info2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articles .info3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .game img{
+        width: 100%;
+    }
+
+}
